@@ -1,0 +1,424 @@
+::-webkit-scrollbar{
+    width: 2px;
+  }
+  
+  ::-webkit-scrollbar-track{
+    background: #b1b1b1; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(104, 104, 104);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(82, 82, 82);
+  }
+
+*{
+    scroll-behavior:smooth;
+  -moz-scroll-behavior: smooth;
+  -o-scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
+}
+
+
+
+
+body{
+    background-color:purple;
+    background-position: -100px -100px;
+    background-image:url("../rsc/bg1.jpg");
+    background-size: cover;
+    transition:all 3s;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.main{
+    min-height:480px;
+    animation-name:main;
+    animation-duration:2s;
+    opacity:0;
+    position: relative;
+    top:0;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    background-color: rgba(250, 250, 250, 0.137);
+    backdrop-filter:blur(30px);
+    transition:all 0.5s;
+    transition:all 1s;
+    border-radius:56px;
+    z-index:1;
+    box-shadow:0px 5px 10px rgba(14, 14, 14, 0.158);
+}
+
+@keyframes main {
+    0%{opacity:0;top:-300px;}
+    100%{opacity:1;top:0;}
+    
+}
+
+#nick{
+    text-shadow:0px 5px 10px rgba(0, 0, 0, 0.342);
+}
+
+#nick:hover{
+    text-shadow:0px 0px 10px rgba(255, 255, 255, 0.568);
+    transition:all 0.1s;
+}
+.header{
+color: white;
+}
+
+.headertext, .headertextuser{
+    font-family: Raleway;
+    font-size:40px;
+    font-weight:600;
+
+}
+
+.headertextuser{
+    font-size:15px;
+    position:relative;
+    top:28px;
+}
+
+.search{
+    position:relative;
+    top:0px;
+    opacity:1;
+    display:block;
+    transition:all 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration:0.5s;
+}
+
+.searchbar{
+
+    color: whitesmoke;
+    font-weight:500;
+    font-family: Raleway;
+    width:200px;
+    height:30px;
+    border-top-left-radius:7px;
+    border-bottom-left-radius:7px;
+    border: none;
+    outline:none;
+    padding:10px;
+    transition:all 0.2s;
+    background-color: rgba(245, 245, 245, 0.233);
+    backdrop-filter:blur(40px);
+    
+}
+#src{
+    box-shadow:0px 5px 10px rgba(0, 0, 0, 0.192);
+}
+.searchbar:focus{
+    width:245px;
+    height:35px;
+    transition:all 0.2s;
+}
+.searchbar::placeholder{
+    color:rgba(255, 255, 255, 0.541);
+}
+
+#src:focus-within .searchbutton{
+    height:35px;
+    width:35px;
+    line-height:33px;
+    transition:all 0.2s;
+}
+
+#src:focus-within .searchbutton i{
+transform: rotate(90deg);
+    transition:all 0.5s;
+}
+
+.searchbutton{
+    background-color: rgba(245, 245, 245, 0.233);
+    backdrop-filter:blur(40px);
+    background-color: none;
+    border-left:1px solid rgba(245, 245, 245, 0.336);
+    border-top-right-radius:7px;
+    border-bottom-right-radius:7px;
+    cursor: pointer;
+    width:30px;
+    height:30px;
+    text-align:center;
+    line-height:30px;
+    vertical-align:middle;
+    transition:all 0.2s;
+}
+
+.searchbutton:hover{
+    background-color: rgba(255, 255, 255, 0.616);
+    transition:all 0.2s;
+}
+
+div.preload-backgrounds1{
+    background: url("../rsc/bg1.jpg") no-repeat -999999px -999999px;
+    background: url("../rsc/bg2.jpg") no-repeat -999999px -999999px;
+}
+div.preload-backgrounds2{
+    background: url("../rsc/bg3.jpg") no-repeat -999999px -999999px;
+    background: url("../rsc/bg4.jpg") no-repeat -999999px -999999px;
+}
+div.preload-backgrounds3{
+    background: url("../rsc/bg5.jpg") no-repeat -999999px -999999px;
+    background: url("../rsc/bg6.jpg") no-repeat -999999px -999999px;
+}
+div.preload-backgrounds4{
+    background: url("../rsc/bg7.jpg") no-repeat -999999px -999999px;
+    background: url("../rsc/bg8.jpg") no-repeat -999999px -999999px;
+}
+div.preload-backgrounds5{
+    background: url("../rsc/bg9.jpg") no-repeat -999999px -999999px;
+    background: url("../rsc/bg10.jpg") no-repeat -999999px -999999px;
+}
+
+
+
+.CF{
+    animation-name: none;
+    position:relative;
+    top:0px;
+    opacity:1;
+    display:block;
+    transition:all 1s!important;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration:0.5s;
+}
+.cardscf{
+    width:300px;
+    background-color:rgba(255, 255, 255, 0.096);
+
+    border-radius:20px;
+    padding:10px;
+    transition:all 0.2s!important;
+    cursor: pointer;
+    box-shadow:0px 5px 10px rgba(0, 0, 0, 0.062);
+    animation-name: none;
+    position:relative;
+    top:0px;
+    opacity:1;
+    display:none;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration:0.5s;
+}
+.cards{
+    width:300px;
+    background-color:rgba(255, 255, 255, 0.096);
+
+    border-radius:20px;
+    padding:10px;
+    transition:all 0.2s!important;
+    cursor: pointer;
+    box-shadow:0px 5px 10px rgba(0, 0, 0, 0.062);
+    animation-name: none;
+    position:relative;
+    top:0px;
+    opacity:1;
+    display:block;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration:0.5s;
+}
+
+
+.cards:hover,.cardscf:hover{
+    box-shadow:0px 5px 10px rgba(0, 0, 0, 0.295)!important;
+    transition:all 0.3s;
+}
+
+.cardsheader{
+    font-family:Raleway;
+    font-size:20px;
+    font-weight:600;
+    color: whitesmoke;
+    text-shadow:0px 5px 10px rgba(0, 0, 0, 0.301);
+    
+}
+
+.cardscontent{
+font-size:19px;
+font-weight:300;
+color:whitesmoke;
+
+}
+
+.backbutton{
+    width:100px;
+    background-color:rgba(255, 255, 255, 0.233);
+    height:25px;
+    vertical-align:middle;
+    text-align: center;
+    border-radius:5px;
+    cursor: pointer;
+    transition:all 0.2s;
+}
+
+.backbutton:hover{
+    background-color:rgba(255, 255, 255, 0.349);
+    transition:all 0.2s;
+}
+
+
+
+.hr{
+    background-color:rgba(255, 255, 255, 0.5);height:1px;width:1px;width:100%;
+}
+
+@keyframes searchD {
+0%{top:0px;opacity:1;}
+100%{top:-50px;opacity:0;}
+}
+
+@keyframes searchA {
+0%{top:-50px;opacity:0;}
+100%{top:0px;opacity:1;}
+}
+
+@keyframes CFD {
+0%{top:50px;opacity:1;}
+100%{top:-50px;opacity:0;}
+}
+        
+@keyframes CFA {
+0%{top:-50px;opacity:0;}
+100%{top:50px;opacity:1;}
+}
+
+
+/*
+DATA CSS
+*/
+
+.data{
+    position:relative;
+    top:0px;
+    opacity:0;
+    display:none;
+    transition:all 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration:0.5s;
+}
+
+.avatar{
+    width:150px;
+    height:150px;
+    border-radius:150px;
+    border: 1px solid rgb(163, 163, 163);
+    box-shadow:0px 5px 10px rgba(0, 0, 0, 0.295);
+    background-image:url("../rsc/test.png");
+    background-size: contain;
+    background-position: center;
+}
+
+.user{
+    font-family:Raleway;
+    font-weight:400;
+    font-size:35px;
+    text-shadow:0px 5px 10px rgba(0, 0, 0, 0.568);
+    transition:all 0.2s;
+}
+.user span{
+    cursor: pointer;
+    transition:all 0.2s;
+}
+
+.user span:hover{
+    text-shadow:0px 0px 10px rgba(255, 255, 255, 0.568);
+    transition:all 0.2s;
+}
+
+.usernick{
+    font-family:Raleway;
+    font-weight:300;
+    font-size:20px;
+    color: rgb(162, 162, 162);
+    text-shadow:0px 5px 10px rgba(0, 0, 0, 0.568);
+}
+
+.bioheader{
+    font-family:Raleway;
+    font-weight:400;
+    font-size:27px;
+    text-shadow:0px 5px 10px rgba(0, 0, 0, 0.568);
+}
+
+.biocontent{
+    font-family:Raleway;
+    font-weight:300;
+    font-size:20px;
+}
+
+.social{
+    font-family:Rubik;
+    font-weight:300;
+    font-size: calc(11px + 6 * ((100vw - 320px) / 680));
+}
+
+.socialheader{
+    text-shadow:0px 5px 10px rgba(0, 0, 0, 0.568);
+    font-family:Rubik;
+    font-size:30px;
+    font-weight:300;
+}
+
+.socialcontent{
+    font-family:Rubik;
+    font-size: calc(14px + 6 * ((100vw - 320px) / 680));
+    font-weight:200;
+}
+
+.clickable{
+    font-family:Rubik;
+    cursor: pointer;
+    transition:all 0.2s;
+}
+
+.clickable:hover{
+    text-shadow:0px 0px 10px rgba(255, 255, 255, 0.568);
+    transition:all 0.2s;
+}
+
+.loading{
+    position: absolute;
+    font-size: 30px;
+    
+    color: rgba(255, 255, 255, 0.562);
+    animation-name:loading;
+    animation-iteration-count: infinite;
+    animation-duration:1s;
+    animation-timing-function: linear;
+}
+
+.loader{
+    position: absolute;
+    left:-15px;
+    z-index:1;
+    transform: translateY(50%);
+    top:100px;
+    opacity:0;
+    display:none;
+    transition:all 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration:0.5s;
+}
+
+@keyframes loading {
+    0%{
+        transform:rotate(0deg);
+    }
+    0%{
+        transform:rotate(360deg);
+    }
+    
+}

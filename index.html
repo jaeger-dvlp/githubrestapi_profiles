@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>GitHub.com/jaeger-dvlp</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="rsc/tab.ico" type="image/x-icon" />
+    <script src="libs/scripts.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body onload="" id="body">
+
+    <div class="container col-12 p-3">
+
+        <div class="main col-12 col-md-11 mt-5 mb-5 mx-auto pl-3 pr-3" id="main">
+
+            <div class="header col-11 p-2 p-md-3 p-lg-3">
+
+                <div class="d-flex active" id="nick" onclick="window.open('https://www.github.com/jaeger-dvlp');"
+                    style="cursor:pointer;transition:all 0.2s;width:310px;">
+
+                    <div>
+
+                        <i class="fab fa-github" style="font-size:40px;line-height:60px;"></i>
+
+                    </div>
+
+                    <span class="headertext ml-2 float-left">GitHub</span>
+
+                    <span class="headertextuser float-left">.com/jaeger-dvlp</span>
+                </div>
+            </div>
+
+            <div class="col-12 mx-auto mb-5"
+                style="background-color:rgba(255, 255, 255, 0.5);height:1px;width:1px;width:100%;"></div>
+
+            <div class="maincontent" style="color: white;margin:0;">
+
+                <div class="col-12 mx-auto mt-5 mb-5 justify-content-center loader" id="loader">
+                    <div class="mx-auto text-center">
+                        <i class="fas fa-spinner loading"></i>
+                    </div>
+                </div>
+
+
+                <div class="data col-12 ml-1 mr-2 mt-3 mb-5 mx-auto" id="data">
+
+                    <div class="col-12">
+                        <div class="mx-auto avatar" id="avatar"></div>
+                    </div>
+
+                    <div class="col-12 mt-1 p-0 mb-0 justify-content-center">
+
+                        <div class="user col-12 mx-auto text-center">
+
+                            <span id="datauser">
+                                Jaeger
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class=" col-12 mb-2 p-0 mt-0 mb-5">
+
+                        <div class="usernick mx-auto text-center" id="datausername">jaeger-dvlp</div>
+
+                    </div>
+
+
+
+                    <div class="firstdata d-flex mx-auto row justify-content-center text-center align-center col-12">
+
+                        <div class="col-12 col-lg-8 p-0">
+
+                            <div class="col-12 d-flex mx-auto row justify-content-between text-center p-0 mb-0">
+
+                                <div class="p-1 float-left col-4 col-md-4 col-lg-4">
+
+                                    <div class="cards social mx-auto col-12 text-center">
+
+                                        <div class="col-12 text-center mx-auto p-0">Stars</div>
+
+                                        <div class="hr col-12 mx-auto mt-2 mb-2"></div>
+
+                                        <div class="col-12 text-center mx-auto" id="stars">12</div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="p-1 mx-auto col-4 col-md-4 col-lg-4">
+
+                                    <div class="cards social mx-auto col-12 text-center">
+
+                                        <div class="col-12 text-center mx-auto p-0">Followers</div>
+
+                                        <div class="hr col-12 mx-auto mt-2 mb-2"></div>
+
+                                        <div class="col-12 text-center mx-auto" id="followers">12</div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="p-1 float-right col-4 col-md-4 col-lg-4">
+
+                                    <div class="cards social mx-auto col-12 text-center">
+
+                                        <div class="col-12 text-center mx-auto p-0">Following</div>
+
+                                        <div class="hr col-12 mx-auto mt-2 mb-2"></div>
+
+                                        <div class="col-12 text-center mx-auto" id="following">12</div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-12 p-1">
+
+                                <div class="cards col-12">
+
+                                    <div class="bioheader text-center">Biography</div>
+
+                                    <div class="hr col-12 mt-2 mx-auto"></div>
+
+                                    <div class="biocontent col-12 mt-2 text-center" id="bio">
+                                        High School Student, Developer
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-12 justify-content-center align-center p-0">
+
+                                <div class="d-flex col-12 justify-content-center mx-auto row p-0">
+
+                                    <div class="p-1 col-12 col-md-6 cold-lg-6">
+
+                                        <div class="cards mx-auto col-12 " style="cursor: default;">
+
+                                            <div class="socialheader text-center">Blog</div>
+
+                                            <div class="hr col-12 mt-2 mx-auto"></div>
+
+                                            <div class="socialcontent col-12 mt-2 mx-auto text-center">
+                                                <span id="blog" class="clickable"
+                                                    onclick="window.open('https://twitter.com')">
+                                                    http://jaegersoftware.cf
+                                                </span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="p-1 col-12 col-md-6 col-lg-6">
+
+                                        <div class="cards mx-auto col-12" style="cursor: default;">
+
+                                            <div class="socialheader text-center">Twitter</div>
+
+                                            <div class="hr col-12 mt-2 mx-auto"></div>
+
+                                            <div class="socialcontent col-12 mt-2 mx-auto text-center">
+                                                <span id="twitter" class="clickable">
+                                                    @7AEGER_
+                                                </span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-12 p-1">
+
+                                <div class="col-12 p-0" style="border-radius:20px;overflow:hidden;">
+
+                                    <div class="cards col-12" style="cursor:default;max-height:300px;overflow-y:auto;"
+                                        id="repos">
+
+                                        <div class="bioheader text-center">Repositories</div>
+
+                                        <div class="hr col-12 mt-2 mx-auto"></div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-12 p-1">
+                                <div class="col-12 p-0" style="border-radius:20px;overflow:hidden;">
+
+                                    <div class="cards col-12" style="cursor: default;max-height:300px;overflow-y: auto;"
+                                        id="activity">
+
+                                        <div class="bioheader text-center">Activities</div>
+
+                                        <div class="hr col-12 mt-2 mx-auto"></div>
+
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="m-2 mx-auto">
+
+                                <div class="backbutton mx-auto text-center" onclick="back('data')">Back</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+                <div class="cardscf mx-auto col-lg-3 col-md-12 col-12 m-2"
+                    style="box-shadow:0px 5px 10px rgba(0, 0, 0, 0.175);z-index:1;cursor: default;" id="CF">
+
+                    <div class="cardsheader mx-auto text-center col-12">Sorry.</div>
+
+                    <div class="col-12 mx-auto mt-1 mb-1 hr"></div>
+
+                    <div class="cardscontent mx-auto text-center col-12 pl-4 pr-4" id="CFUSER">
+
+                    </div>
+
+                    <div class="m-2 mx-auto">
+
+                        <div class="backbutton mx-auto text-center" onclick="back('error')">Back</div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="search" style="margin:0;" id="search">
+
+                    <div class="col-12 text-center mb-3"
+                        style="font-weight:400;font-size:25px;text-shadow:0px 5px 7px rgba(0, 0, 0, 0.62)!important;">
+                        Which GitHub user are you looking for ? </div>
+
+                    <div class="col-12 d-flex" style="margin:0;">
+
+                        <div class="mx-auto" id="src" style="margin:0;">
+
+                            <input class="searchbar src float-left" id="textbox" style="margin:0;" type="text"
+                                placeholder="Username.." required="" autocomplete="off"
+                                onkeypress="if(event.keyCode == 32){return false;} else if(event.keyCode == 13){search()}">
+
+                            <div class="searchbutton  float-left" style="margin:0;" onclick="search()">
+
+                                <i class=" fas fa-search" style="transition:all 0.5s;color: white;"></i>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="searchbottom m-3 mt-5 p-3 mx-auto col-12 d-flex justify-content-center row h-100">
+
+                        <div class="cards col-lg-3 col-md-12 col-12 m-2 ">
+
+                            <div class="cardsheader mx-auto text-center col-12">Get Profile</div>
+
+                            <div class="col-12 mx-auto mt-1 mb-1 hr"></div>
+
+                            <div class="cardscontent mx-auto text-center col-12 pl-4 pr-4">
+                                Get the profile details and profile information for the username you provided.
+                            </div>
+
+
+                        </div>
+
+                        <div class="cards col-lg-3 col-md-12 col-12 m-2 ">
+
+                            <div class="cardsheader mx-auto text-center col-12">Get Repos</div>
+
+                            <div class="col-12 mx-auto mt-1 mb-1 hr"></div>
+
+                            <div class="cardscontent mx-auto text-center col-12 pl-4 pr-4">
+                                Get the repositories details and repositories informations for the username you
+                                provided.
+                            </div>
+
+                        </div>
+
+                        <div class="cards col-lg-3 col-md-12 col-12 m-2 ">
+
+                            <div class="cardsheader mx-auto text-center col-12">Get Activites</div>
+
+                            <div class="col-12 mx-auto mt-1 mb-1 hr"></div>
+
+                            <div class="cardscontent mx-auto text-center col-12 pl-4 pr-4">
+                                Get the profile activities and profile activities details for the username you
+                                provided.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="preload-backgrounds1"></div>
+    <div class="preload-backgrounds2"></div>
+    <div class="preload-backgrounds3"></div>
+    <div class="preload-backgrounds4"></div>
+    <div class="preload-backgrounds5"></div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
