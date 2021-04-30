@@ -180,7 +180,6 @@ async function activity() {
             '<div class="hr col-12 mt-2 mx-auto"></div>';
 
         $.each(data, function (i, datas) {
-            console.log(datas);
             time = "";
 
             for (var q = 0; q < 10; q++) {
