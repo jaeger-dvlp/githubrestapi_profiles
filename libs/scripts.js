@@ -71,6 +71,7 @@ async function setdata(data) {
     var blog = data.blog;
     var twitter = data.twitter_username;
 
+
     //console.log(username, starred, followers, following, bio, blog, twitter, avatar);
 
     document.getElementById("stars").innerText = starred;
